@@ -18,6 +18,19 @@
   <header>
     <a href="#" class="icono" onclick="MiFuncion()"><i class="fa fa-bars" aria-hidden="true"></i></a>
     <a href="index.html"><img class="logo" src="logoañe.png" alt="AÑEslot"></a>
+     <form class="search-form" action="https://www.google.com/search" method="GET" target="_blank">
+      <input name="q" type="text" class="search-input" placeholder="Buscar..." required>
+      <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+    </form>
+
+    <button class="cart-button" title="Carrito">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-count">0</span>
+    </button>
+
+    <button class="user-button" onclick="abrirFormulario()" title="Suscripción">
+      <i class="fas fa-user"></i>
+    </button>
   </header>
 
   <nav id="navegador">
@@ -89,4 +102,5 @@
     <p>POWERED BY: <a href="https://www.instagram.com/fernandocorengia/" target="_blank">Fernando Corengia</a></p>
   </footer>
 </body>
+
 </html>
