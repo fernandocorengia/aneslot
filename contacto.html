@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Contacto – AÑEslot</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Banner superior -->
+<div class="bannersuperior">
+    <div class="slider">
+        <p>🏁 Viví la emoción del automodelismo en AÑEslot</p>
+        <p>🚗 Participá de nuestras competencias semanales</p>
+        <p>🎉 Disfrutá en familia, corré, aprendé y divertite</p>
+    </div>
+</div>
+
+<!-- HEADER -->
+<header>
+    <a href="#" class="icono" onclick="MiFuncion()"><i class="fa fa-bars"></i></a>
+
+    <a href="index.html">
+        <img class="logo" src="logoañe.png" alt="AÑEslot">
+    </a>
+
+    <form class="search-form" action="https://www.google.com/search" method="GET" target="_blank">
+        <input name="q" type="text" class="search-input" placeholder="Buscar..." required>
+        <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+    </form>
+
+    <button class="cart-button">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+    </button>
+
+    <button class="user-button" onclick="abrirFormulario()">
+        <i class="fas fa-user"></i>
+    </button>
+</header>
+
+<!-- NAV -->
+<nav id="navegador">
+    <ul class="menu">  
+        <li class="estilo-clase"><a href="index.html">INICIO</a></li>
+        <li class="estilo-clase"><a href="nosotros.html">NOSOTROS</a></li>
+        <li class="estilo-clase"><a href="competencias.html">COMPETENCIAS</a></li>
+        <li class="estilo-clase"><a href="tienda.html">TIENDA</a></li>
+        <li class="estilo-clase"><a href="contacto.html">CONTACTO</a></li>
+    </ul> 
+</nav>
+
+<main class="contenido-principal">
+
+    <h1>CONTACTO</h1>
+
+    <section class="contacto-section">
+
+        <div class="contacto-info">
+            <h2>📍 Información de contacto</h2>
+            <p><strong>Teléfono:</strong> 011 4775-5165</p>
+            <p><strong>Dirección:</strong> Av. Raúl Scalabrini Ortiz 818, CABA</p>
+        </div>
+
+        <div class="mapa">
+            <iframe 
+                src="https://www.google.com/maps?q=Av.+Ra%C3%BAl+Scalabrini+Ortiz+818,+Buenos+Aires&output=embed" 
+                width="100%" 
+                height="350" 
+                style="border:0; border-radius:10px; box-shadow:0 0 10px #12130C;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <div class="form-contacto">
+            <h2>✉ Envíanos tu mensaje</h2>
+
+            <form class="contacto-form" action="https://formspree.io/f/xpwzzwdy" method="POST">
+                <label>Nombre completo</label>
+                <input type="text" name="nombre" required>
+
+                <label>Email</label>
+                <input type="email" name="email" required>
+
+                <label>Teléfono</label>
+                <input type="text" name="telefono">
+
+                <label>Mensaje</label>
+                <textarea name="mensaje" rows="5" required></textarea>
+
+                <button type="submit" class="btn-compra" style="margin-top:20px;">
+                    Enviar mensaje
+                </button>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<div class="prefooter">
+    <div class="columna">
+        <h3>INSTITUCIONAL</h3>
+        <a href="nosotros.html">Quiénes somos</a>
+        <a href="https://autogestion.produccion.gob.ar/consumidores" target="_blank">Defensa del consumidor</a>
+    </div>
+
+    <div class="columna">
+        <h3>REDES</h3>
+        <a href="https://instagram.com/fernandocorengia" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+    </div>
+
+    <div class="columna">
+        <h3>ATENCIÓN AL CLIENTE</h3>
+        <a href="https://wa.me/+5491167263360" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="mailto:corengiafernando@gmail.com"><i class="fas fa-envelope"></i> E-mail</a>
+    </div>
+</div>
+
+<footer>
+    <p>POWERED BY: <a href="https://www.instagram.com/fernandocorengia/" target="_blank">Fernando Corengia</a></p>
+</footer>
+
+</body>
+</html>
